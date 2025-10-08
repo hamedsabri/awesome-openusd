@@ -131,6 +131,10 @@ Scene and other assets put together to test USD features and as examples of how 
 - [Confusing Acronym Blog](https://confusing-acronym.com) - A blog about OpenUSD with a lot of technical explanations.
 - [OpenUSD in One Weekend](https://learn-usd.github.io/) - Technical learning content to learn OpenUSD in one weekend and beyond.
 
+### Certification
+- [OpenUSD Development Certification](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/) - An intermediate-level credential that validates a candidate’s ability to build, maintain, and optimize 3D content creation pipelines using OpenUSD.
+- [Why Get Certified](https://docs.nvidia.com/learn-openusd/latest/why-openusd-developer-certification.html) - What is the OpenUSD Development Certification and why it's important.
+
 
 ## References
 
