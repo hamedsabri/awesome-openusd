@@ -7,7 +7,7 @@
 
 # Awesome OpenUSD
 
-A curated list of awesome Universal Scene Description (OpenUSD) resources and projects. These are hand-picked resources and projects that I find awesome. You might find more or others at the [ASWF USD Working Group Wiki](https://wiki.aswf.io/display/WGUSD/USD+Projects+and+Resources).
+A curated list of awesome Universal Scene Description (OpenUSD) resources and projects. These are hand-picked resources and projects that I find awesome.
 
 ## Contents
 
@@ -18,28 +18,32 @@ A curated list of awesome Universal Scene Description (OpenUSD) resources and pr
 - [References](#references)
 - [Integrations](#integrations)
 
-## What is OpenUSD?
+## What Is OpenUSD?
 
 ### Non-Technical Explanation
 
+- [What is USD? (The basics of Pixar’s 3D file format in 15 minutes)](https://www.youtube.com/watch?v=JixC53cQn5U) – Artist-friendly video introduction to OpenUSD.
+- [Why You Should Use OpenUSD](https://www.youtube.com/watch?v=riqp4_eZa2Y) - More than just What OpenUSD is, why does it matter?
 - [A USD primer for ARTISTS](https://www.youtube.com/watch?v=SaBXE4yQetk) – Video explanation focused for artists with some overview of Maya workflows. Short and sweet.
 - [What is USD: A Primer | Rob Stauffer | SIGGRAPH 2019](https://www.youtube.com/watch?v=Yp_TRVD3wjQ) – Longer video, but more complete explanation of stage composition.
 - [Five Things to Know About USD](https://www.youtube.com/watch?v=vFxytzQlOEs)
-- [What is USD? (The basics of Pixar’s 3D file format in 15 minutes)](https://www.youtube.com/watch?v=JixC53cQn5U) – Artist-friendly video introduction to OpenUSD.
-- [Why You Should Use OpenUSD](https://www.youtube.com/watch?v=riqp4_eZa2Y) - More than just What OpenUSD is, why does it matter?
+
 
 ### Technical Explanation
 
-- [Introduction to USD](https://graphics.pixar.com/usd/release/intro.html) – The official OpenUSD site provides a brief intro and overview.
+- [Introduction to USD](https://openusd.org/release/intro.html) – The official OpenUSD documentation provides a brief intro and overview.
 - [Understand USD Fundamentals](https://developer.apple.com/videos/play/wwdc2022/10129/) – An introductory overview video of USD with examples.
-- [What Makes USD Unique in NVIDIA Omniverse](https://www.youtube.com/watch?v=o2x-30-PTkw) – Short high-level overview of USD and what makes it unique.
 - [NVIDIA USD Developer YouTube Series](https://www.youtube.com/playlist?list=PL3jK4xNnlCVcUP08kj6eOzvCA82U_JKiy) – Intro video series covering the top unique features of OpenUSD.
 
 ## Libraries & Tools
 
-- [OpenUSD Github Repository](https://github.com/PixarAnimationStudios/USD) – The main repository for the Universal Scene Description (USD) project.
+- [OpenUSD Github Repository](https://github.com/PixarAnimationStudios/OpenUSD) – The main repository for the Universal Scene Description (USD) project.
 - [usd-core](https://pypi.org/project/usd-core/) – usd-core Python package on pypi. Use the USD core Python API without having to build USD.
 - [USD Notice Framework](https://disneyanimation.com/open-source/usd-notice-framework/) – A USD plugin from WDAS with a set of software APIs for managing the flow of notifications that are emitted when authoring USD stages.
+- [SwiftUsd](https://github.com/apple/SwiftUsd) - A Swift Package for using OpenUSD in Swift
+- [ImGui Hydra Editor](https://github.com/raph080/ImGuiHydraEditor) - A USD editor written in C++ with the ImGui.
+- [usdshadeview](https://github.com/pablode/usdshadeview) - A usdview plugin for inspecting UsdShade networks.
+- [Relationship Viewer](https://github.com/wdas/relationship-viewer) - relview is a visualizer for relationships between OpenUSD prims and attributes.
 - [UsdQt](https://github.com/LumaPictures/usd-qt) – Resuable Qt components for building custom USD tools from Luma.
 - [usdtweak](https://github.com/cpichard/usdtweak) – USD editing tool. Kind of like usdview with editing capabilities.
 - [USD Manager](https://github.com/dreamworksanimation/usdmanager) – Tool from DreamWorks Animation for browsing, managing, and editing USD files.
@@ -49,31 +53,35 @@ A curated list of awesome Universal Scene Description (OpenUSD) resources and pr
 - [Luma URI Resolver](https://github.com/LumaPictures/usd-uri-resolver) – Luma's example URI asset resolver.
 - [S3 Resolver](https://github.com/westerndigitalcorporation/usd-s3-resolver) – An Amazon S3 and MySQL asset resolver.
 - [usdstubgen](https://github.com/chadrik/usdstubgen) – Generates python stub filles (.pyi) for USD Python API for static type analysis and code completion.
-- [Switch](https://github.com/VictorYudin/switch) – A simple built on USD and Hydra.
 - [Autodesk USD WebASM](https://forums.autodesk.com/t5/engineering-hub-blog/autodesk-open-sources-web-based-usd-viewing-implementation/ba-p/11071751) – USD running on the browser and a Three.js Hydra render delegate. [Demo](https://autodesk-forks.github.io/USD/) 
 - [USDZ Web Viewer](https://www.usdz-viewer.net/) – View USDZ files in the browser. Builds on Autodesk's related work. [USDZ Loader Github ](https://github.com/ponahoum/three-usdz-loader) [Viewer Github](https://github.com/ponahoum/usdz-web-viewer)
 - [UsdSkel Util](https://github.com/meshula/usdskelutil) – Utilities for use with the UsdSkel schema
-- [Apple Schemas](https://developer.apple.com/documentation/arkit/usdz_schemas_for_ar) – USDZ schemas for AR (e.g. Anchoring, Behaviors, Text)
 - [tinyusdz](https://github.com/lighttransport/tinyusdz) – Tiny, dependency-free USDZ/USDA/USDC library written in C++14
+- [Native Rust USD library](https://github.com/mxpv/openusd) - An implementation of Universal Scene Description written in native Rust.
 
-### Converters
+### Converters & File Format Plugins
 
+- [Adobe USD File Format Plugins](https://github.com/adobe/USD-Fileformat-plugins) - A collection of file format plugins for FBX, glTF, OBJ, PLY, SBSAR, SPZ, and STL.
 - [guc](https://github.com/pablode/guc) – glTF to USD converter than boasts near-lossless material translation via MaterialX
-- [USD from glTF](https://github.com/google/usd_from_gltf) – gltf to USD converter focused on AR Quick Look support.
+- [USD Exchange SDK](https://github.com/NVIDIA-Omniverse/usd-exchange) - Accelerates OpenUSD adoption by helping developers design, build, and test their own USD I/O solutions.
+- [mujoco-usd-converter](https://github.com/newton-physics/mujoco-usd-converter) - A MuJoCo to OpenUSD Data Converter
 - [gltf2usd](https://github.com/kcoley/gltf2usd) – glTF to USD converter with ARKit/USDZ support.
 - [ptc2usd](https://github.com/simpassi/ptc2usd) – Converts Pixar's PTC and Houdini JSON point clouds to USD.
 - [Omniverse Asset Converter](https://docs.omniverse.nvidia.com/extensions/latest/ext_asset-converter.html) – Python API and microservice for converting FBX/glTF/OBJ to USD.
 - [fspy-USD](https://github.com/Vochsel/fspy-USD) – Converts fSpy camera matching file to USD.
+- [Multiverse](https://j-cube.jp/solutions/multiverse/) – non-destructive import/edting of USD for Maya and other DCCs.
+- [usdat](https://github.com/dreamworksanimation/dwa_usd_plugins/tree/master/pxr/usd/plugin/usdat) – A FileFormat plugin from DreamWorks Animation that enables working with templating in USD files.
 
 ### Hydra
 
+- [HdAurora](https://github.com/Autodesk/Aurora/blob/main/Doc/HdAurora.md) - Hydra render delegate for Autodesk's real-time GPU pathtracing renderer.
+- [Hydra Viewport Toolbox](https://github.com/Autodesk/hydra-viewport-toolbox) - Utilities to support graphics viewports using OpenUSD Hydra
 - [3Delight|NSI](https://gitlab.com/3Delight/HydraNSI) – Hydra render delegate for 3Delight resp. any renderer implementing the NSI API.
 - [Arnold USD](https://github.com/Autodesk/arnold-usd) – Arnold Hydra render delegate and schemas.
 - [Blackbird (Blender Cycles)](https://github.com/tangent-opensource/hdBlackbird) – Blender Cycles Hydra render delegate from Tangent Animation.
 - [LuxCoreRender](https://github.com/jbgann/LuxCoreRenderUSD) – LuxCoreRender Hydra render delegate.
 - [Moonray](https://github.com/dreamworksanimation/hdMoonray) - Hydra render delegate for Dreamworks Animation's Moonray.
 - [gatling](https://github.com/pablode/gatling) – Hydra render delegate for GPU-based path tracer.
-- [OSPRay](https://github.com/ospray/hdospray) – Hydra render delegate for Intel's OSPRay.
 - [Radeon ProRender](https://github.com/GPUOpen-LibrariesAndSDKs/RadeonProRenderUSD) – Hydra render delegate for AMD's Radeon ProRender.
 
 ### Text Editor Plugins
@@ -83,17 +91,12 @@ A curated list of awesome Universal Scene Description (OpenUSD) resources and pr
 - [usda-syntax](https://github.com/superfunc/usda-syntax) – Syntax Highlighting for USDA files in vim, emacs & sublime.
 - [Notepad++ Syntax Highlighter](https://github.com/AndrewHazelden/PIXAR-USD-Syntax-Highlighter) – USDA file syntax highlighting in Notepad++.
 
-### File Format Plugins
-
-- [Multiverse](https://j-cube.jp/solutions/multiverse/) – non-destructive import/edting of USD for Maya and other DCCs.
-- [usdat](https://github.com/dreamworksanimation/dwa_usd_plugins/tree/master/pxr/usd/plugin/usdat) – A FileFormat plugin from DreamWorks Animation that enables working with templating in USD files.
-
 ## Sample Assets
 
 Scene and other assets put together to test USD features and as examples of how to compose your assets and stages.
 
-- [Pixar Sample Assets](https://graphics.pixar.com/usd/release/dl_downloads.html#assets) – Kitchen Set, City Set, UsdSkel Examples.
-- [NVIDIA Sample Assets](https://developer.nvidia.com/usd#sample) – Marbles Sample, Attic Sample.
+- [Pixar Sample Assets](https://openusd.org/release/dl_downloads.html#assets) – Kitchen Set, City Set, UsdSkel Examples.
+- [NVIDIA Sample Assets](https://developer.nvidia.com/usd?sortBy=developer_learning_library%2Fsort%2Ffeatured_in.usd_resources%3Adesc%2Ctitle%3Aasc&hitsPerPage=6#section-samples-and-examples) – Physical AI dataset, Warehouse sample, Da Vinci Workshop sample.
 - [Animal Logic](https://animallogic.com/usd-alab/) – USD ALab.
 - [Disney Moana Island Scene](https://www.disneyanimation.com/resources/moana-island-scene/) – Full island scene data from Moana animated feature film.
 - [Lowe's Open Builder](https://www.lowesopenbuilder.com/) – Over 500 furniture models from the Lowe's catalog in USDZ format.
@@ -109,15 +112,14 @@ Scene and other assets put together to test USD features and as examples of how 
 
 ### Non-Technical Learning
 
-- [Learn OpenUSD: Foundations](https://www.nvidia.com/en-us/learn/learning-path/openusd/) – A learning path teaching the foundational concepts of OpenUSD with lectures and guided exercises.
-- [Learn OpenUSD Video](https://www.youtube.com/playlist?list=PL3jK4xNnlCVcae9UrxpVWyFw63QCFA6JA) - A playlist of short videos teaching the foundation concepts from Learn OpenUSD.
+- [Learn OpenUSD: Foundations](https://docs.nvidia.com/learn-openusd/latest/index.html) – The first 4 modules teach the foundational concepts of OpenUSD with lectures, videos, and examples.
+- [Learn OpenUSD Videos](https://www.youtube.com/playlist?list=PL3jK4xNnlCVcae9UrxpVWyFw63QCFA6JA) - A playlist of short videos teaching the foundation concepts from Learn OpenUSD.
 - [Book of USD](https://remedy-entertainment.github.io/USDBook/) – A less technical introduction and overview of USD and its terminology by Remedy Entertainment.
 
 ### Technical Learning
 
-- [Learn OpenUSD](https://www.nvidia.com/en-us/learn/learning-path/openusd/) – A learning path teaching the foundational and applied concepts of USD with lectures and guided exercises.
-- [Pixar USD Tutorials](https://graphics.pixar.com/usd/release/tut_usd_tutorials.html) – 14 modules with step-by-step instructions showing how to use the Python API and the results in USDA and usdview
-- [NVIDIA's Python USD Tutorial](https://developer.nvidia.com/usd/tutorials) – A brief tutorial of working with USD using the Python API.
+- [Learn OpenUSD](https://docs.nvidia.com/learn-openusd/latest/index.html) – Open source USD developer learning path with lectures and guided exercises. ([Github](https://github.com/NVIDIA-Omniverse/LearnOpenUSD))
+- [Pixar USD Tutorials](https://openusd.org/release/tut_usd_tutorials.html) – 14 modules with step-by-step instructions showing how to use the Python API and the results in USDA and usdview
 - [ASWF USD-WG Presentations](https://wiki.aswf.io/display/WGUSD/Presentations) – Interesting presentations from the ASWF USD Working Group.
 - [USD Plugin Examples](https://github.com/wetadigital/USDPluginExamples) – Simple examples to demonstrate how to compile and build USD plugins.
 - [USD Plugin Samples](https://github.com/NVIDIA-Omniverse/usd-plugin-samples) – USD schema extension samples, build tools, and sample kit extensions that use those schema extensions from NVIDIA.
@@ -127,12 +129,16 @@ Scene and other assets put together to test USD features and as examples of how 
 - [OmniverseUSD Guide](https://omniverseusd.github.io/) - A from-the-ground-up introduction to OpenUSD through Omniverse Python runnable examples.
 - [USD in Production](https://dl.acm.org/doi/10.1145/3587423.3595531) - SIGGRAPH 2023 Course
 - [Confusing Acronym Blog](https://confusing-acronym.com) - A blog about OpenUSD with a lot of technical explanations.
+- [OpenUSD in One Weekend](https://learn-usd.github.io/) - Technical learning content to learn OpenUSD in one weekend and beyond.
 
 
 ## References
 
-- [USD C++ API Documentation](https://graphics.pixar.com/usd/release/api/index.html) – The primary USD C++ API documentation.
-- [NVIDIA's Python API Notes](https://developer.nvidia.com/usd/apinotes) – A primer for USD Python API usage.
+- [OpenUSD Documentation](https://openusd.org/release/index.html) - The official OpenUSD documentation.
+- [NVIDIA OpenUSD Documentation](https://docs.omniverse.nvidia.com/usd/latest/index.html) - Supplemental OpenUSD documentation from NVIDIA.
+- [USD C++ API Documentation](https://openusd.org/release/api/index.html) – The primary USD C++ API documentation.
+- [USD Python API Documentation](https://docs.omniverse.nvidia.com/kit/docs/pxr-usd-api/latest/pxr.html) - OpenUSD Python API documentation from NVIDIA.
+- [NVIDIA's Python API Notes](https://docs.omniverse.nvidia.com/usd/latest/technical_reference/api-comparison.html) – A primer for USD Python API usage.
 - [Colin Kennedy's USD Cookbook](https://github.com/ColinKennedy/USD-Cookbook) – Basic to advanced examples of USD in C++, Python, and USDA formats.
 - [usd-interest Google Group](https://groups.google.com/g/usd-interest) – Search years through years of USD questions or ask one here.
 - [ASWF USD Working Group](https://github.com/AcademySoftwareFoundation/wg-usd) – Information about the ASWF USD Working Group.
